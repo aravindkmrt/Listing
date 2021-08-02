@@ -92,14 +92,8 @@ public class BaseListing {
 
 	}
 
-	public static void waitingWeb() {
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	
 
-	}
-	public static void pageLoadTime() {
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-
-	}
 	public static void launchfirefox() {
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
@@ -115,7 +109,14 @@ public class BaseListing {
 		System.out.println(Title);
 
 	}
+	public static void waitingWeb() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
+	}
+	public static void pageLoadTime() {
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+
+	}
 	public static String currentUrl() {
 		String currentUrl = driver.getCurrentUrl();
 		System.out.println(currentUrl);
@@ -184,13 +185,36 @@ public class BaseListing {
 	public static void alertAccept1() throws AWTException {
 	
 		Robot robot = new Robot();
+		
+		robot.keyPress(KeyEvent.VK_ESCAPE);
+		robot.keyRelease(KeyEvent.VK_ESCAPE);
+//		robot.keyPress(KeyEvent.VK_ENTER);
+//		robot.keyRelease(KeyEvent.VK_ENTER);
+	}
+	public static void alertAccept2() throws AWTException {
+		
+		Robot robot = new Robot();
+		
 		robot.keyPress(KeyEvent.VK_TAB);
 		robot.keyRelease(KeyEvent.VK_TAB);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
 	
+public static void alertAccept3(String value) throws AWTException {
+		
+		Robot robot = new Robot();
+		
+			
+		
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_TAB);
 
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		
+		robot.keyRelease(KeyEvent.VK_TAB);
+		
+	}
 	public static void alertDismiss() {
 		driver.switchTo().alert().dismiss();
 	//	System.out.println(al.getText());
@@ -239,7 +263,6 @@ public class BaseListing {
 
 	public static void framedefault() {
 		driver.switchTo().defaultContent();
-
 	}
 
 	public static void selectIndex(WebElement element, int i) {
@@ -342,6 +365,14 @@ public class BaseListing {
 		List<String>listofwindowid =  a ;
 		listofwindowid.addAll(windowHandles);
 		String index = listofwindowid.get(i);
+		driver.switchTo().window(index);
+	}
+	public static void switchWindow1(int j) {
+		Set<String> windowHandles = driver.getWindowHandles();
+		a= new ArrayList();
+		List<String>listofwindowid =  a ;
+		listofwindowid.addAll(windowHandles);
+		String index = listofwindowid.get(j);
 		driver.switchTo().window(index);
 	}
 	public static void enable(WebElement element) {

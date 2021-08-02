@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.ListingHomebase.Listing">
+      <class name="org.ListingHomebase.listing1">
         <methods>
-          <include name="user_have_to_enter_skip"/>
-          <include name="user_have_to_click_profile_prefered_first_profile_z"/>
+          <include name="user_have_to_click_profile_prefered_aearch"/>
+          <include name="user_have_to_click_profile_prefered_first_profile_who_viewed_myprofile"/>
+          <include name="user_have_to_click_profile_prefered_Who_viewed_my_profile"/>
+          <include name="user_have_to_click_profile_prefered_first_profile_mobile"/>
         </methods>
-      </class> <!-- org.ListingHomebase.Listing -->
+      </class> <!-- org.ListingHomebase.listing1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="2" name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="org.ListingHomebase.listing1">
+        <methods>
+          <include name="user_have_to_click_profile_prefered_shortlist"/>
+          <include name="user_have_to_click_profile_prefered_aearch"/>
+          <include name="user_have_to_click_the_submit_button"/>
+          <include name="user_have_to_click_profile_prefered_first_profile_z"/>
+          <include name="user_have_to_click_profile_prefered_March"/>
+          <include name="user_have_to_click_profile_prefered_first_profile_shorlist"/>
+        </methods>
+      </class> <!-- org.ListingHomebase.listing1 -->
+      <class name="org.ListingHomebase.listing2">
+        <methods>
+          <include name="user_have_to_enter_skip"/>
+          <include name="user_have_to_click_profile_prefered_shortlist"/>
+          <include name="user_have_to_click_profile_prefered_first_profile_shorlist"/>
+        </methods>
+      </class> <!-- org.ListingHomebase.listing2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
