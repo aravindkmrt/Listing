@@ -5,9 +5,12 @@
     <classes>
       <class name="org.ListingHomebase.listing1">
         <methods>
+          <include name="user_have_to_click_profile_prefered_shortlist"/>
           <include name="user_have_to_click_profile_prefered_aearch"/>
+          <include name="user_have_to_click_profile_prefered_first_profile_viewed"/>
+          <include name="user_have_to_click_profile_prefered_mobileview"/>
           <include name="user_have_to_click_profile_prefered_first_profile_who_viewed_myprofile"/>
-          <include name="user_have_to_click_profile_prefered_Who_viewed_my_profile"/>
+          <include name="user_have_to_click_profile_prefered_first_profile_shorlist"/>
           <include name="user_have_to_click_profile_prefered_first_profile_mobile"/>
         </methods>
       </class> <!-- org.ListingHomebase.listing1 -->

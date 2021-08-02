@@ -63,7 +63,7 @@ alertAccept2();
 	}
 
 	@Test(priority = 6, retryAnalyzer = RetryAnalyzerImp.class)
-	public void user_have_to_click_profile_prefered_aearch() throws Exception {
+	public void user_have_to_click_search() throws Exception {
 		waitingWeb();
 		WebElement l1 = driver.findElement(By.xpath("(//*[@class='fleft posrelative'])[4]/a"));
 		toMove(l1);
@@ -77,7 +77,7 @@ alertAccept2();
 	}
 
 	@Test(priority = 7)
-	public void user_have_to_click_profile_prefered_bearch() throws Exception {
+	public void user_have_to_click_search_profile() throws Exception {
 
 		waitingWeb();
 		for (int i = 1, j = 1; i < 10; i++, j++) {
@@ -98,7 +98,7 @@ alertAccept2();
 	}
 
 	@Test(priority = 8, retryAnalyzer = RetryAnalyzerImp.class)
-	public void user_have_to_click_profile_prefered_March() throws Throwable {
+	public void user_have_to_click_not_contacted() throws Throwable {
 		waitingWeb();
 		WebElement z12 = driver.findElement(By.xpath("(//*[@class=\"fleft posrelative\"])[1]/a"));
 		toMove(z12);
@@ -106,7 +106,7 @@ alertAccept2();
 	}
 	
 	@Test(priority = 9)
-	public void user_have_to_click_profile_prefered_first_profile_viewed() throws Throwable {
+	public void user_have_to_click_profile_viewed() throws Throwable {
 		waitingWeb();
 		for (int i = 10, j = 1; i < 20; i++, j++) {
 			switchWindow(0);
@@ -192,7 +192,7 @@ alertAccept2();
 	}
 
 	@Test(priority = 12)
-	public void user_have_to_click_profile_prefered_first_profile_shorlist() throws Throwable  {
+	public void user_have_to_click_first_profile_shorlist() throws Throwable  {
 		waitingWeb();
 
 
@@ -279,7 +279,7 @@ alertAccept2();
 	}
 
 	@Test(priority = 13, retryAnalyzer = RetryAnalyzerImp.class)
-	public void user_have_to_click_profile_prefered_mobileview() throws Throwable {
+	public void user_have_to_click_mobileview() throws Throwable {
 		Thread.sleep(3000);
 		waitingWeb();
 		pageLoadTime();
